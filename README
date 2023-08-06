@@ -1,5 +1,5 @@
 # Automated Storybook-Style Video Generator:
-Testing!!!
+
 ## Description:
 This project automatically generates and emails you a storybook-style short-form video with narration and word-by-word captioning based on a given topic. It is powered by OpenAI's gpt, ResponsiveVoice, and Pexels stock image library. 
 
