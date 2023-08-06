@@ -20,7 +20,8 @@ def index():
 
     return render_template('index.html')
 
-# Runs app locally
+# Runs and configures app
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5002))
+    app.config['HUEY_URL'] = os.environ.get('REDIS_URL', 'redis://localhost:6379')
     app.run(host='0.0.0.0', port=port, debug=True)
