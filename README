@@ -30,6 +30,7 @@ EMAIL_ADDRESS=[address]
 EMAIL_PASSWORD=[password]
 EMAIL_SERVER=[server]
 EMAIL_PORT=[port]
+PORT=[]
 ```
 ### Use:
 To run this program, run `app.py` and in a separate terminal, run:
