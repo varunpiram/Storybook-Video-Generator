@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import os
 from handler import generate
+hu = str(os.getenv('HUEY_URL'))
+ru = str(os.getenv('REDIS_URL'))
 
 app = Flask(__name__)
 
@@ -23,5 +25,5 @@ def index():
 # Runs and configures app
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5002))
-    app.config['HUEY_URL'] = os.environ.get('REDIS_URL', 'redis://localhost:6379')
+    app.config[hu] = os.environ.get(ru, 'redis://localhost:6379')
     app.run(host='0.0.0.0', port=port, debug=True)
