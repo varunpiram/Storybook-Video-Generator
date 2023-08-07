@@ -1,7 +1,7 @@
 # Automated Storybook-Style Video Generator:
 
 ## Description:
-This project automatically generates and emails you a storybook-style short-form video with narration and word-by-word captioning based on a given topic. It is powered by OpenAI's gpt, ResponsiveVoice, and Pexels stock image library. 
+This project automatically generates and emails you a storybook-style short-form video with narration and word-by-word captioning based on a given topic. It is powered by OpenAI's GPT, ResponsiveVoice, and Pexel's stock image library. 
 
 It works by taking in an email address and topic, which is then passed into the VideoGenerator class which uses MoviePy. Here, the topic is passed into the StoryGenerator, which then requests and processes a story through OpenAI's API. 
 
