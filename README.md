@@ -44,7 +44,3 @@ To clear all tasks in the queue, use:
 `redis-cli FLUSHALL`
 
 This will delete all data so be careful.
-
-
-
-
