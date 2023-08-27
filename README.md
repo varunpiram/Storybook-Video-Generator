@@ -3,13 +3,13 @@
 ## Description:
 This project automatically generates and emails you a storybook-style short-form video with narration and word-by-word captioning based on a given topic. It is powered by OpenAI's GPT, ResponsiveVoice, and Pexel's stock image library. 
 
-It works by taking in an email address and topic, which is then passed into the VideoGenerator class which uses MoviePy. Here, the topic is passed into the StoryGenerator, which then requests and processes a story through OpenAI's API. 
+It works by taking in an email address and topic, which is then passed into the VideoGenerator class which uses MoviePy. Here, the topic is passed into the StoryGenerator, which then requests, generates, and processes a story through OpenAI's API. 
 
-The story is then broken into sentences, where images and voice are generated through Pexels and ResponsiveVoice, and then turned into clips. In each clip, the sentences are further broken into words, for which captions are generated using Matplotlib, and then overlayed.
+The story is then broken into sentences, where images and voice are generated through Pexels and ResponsiveVoice. Then, the story is further broken down into clips, where the sentences are split into words, for which captions are generated using Matplotlib, and then overlayed onto the video.
 
-Finally, all the clips are combined, and then sent out to an email address.
+Finally, all the clips are combined into a finished product, and then sent out to the email address.
 
-This project can be locally hosted, and implements asynchronous programming via huey to allow multiple requests without waiting for generation to complete.
+This project has a front-end web interface which can be locally hosted, and implements asynchronous programming via huey to allow multiple requests without waiting for generation to complete.
 
 ## Usage:
 ### Setup:
